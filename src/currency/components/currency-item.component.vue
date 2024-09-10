@@ -25,7 +25,9 @@ const rating = ref(0);
 <template>
   <pv-card :aria-label="currency.name">
     <template #header>
-      <img :src="currency.image" :alt="currency.name" aria-hidden="false">
+      <picture>
+        <img :src="currency.image" :alt="currency.name" aria-hidden="false">
+      </picture>
     </template>
     <template #title>
       <h2 aria-label="Name of the currency">{{currency.name}}</h2>
@@ -42,6 +44,17 @@ const rating = ref(0);
 <style scoped>
   .p-card{
     padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px #bebebe;
+  }
+  .p-rating-on-icon {
+    color: #ffcc00 !important;
+    font-size: 24px;
+  }
+  picture {
+    display: flex;
+    justify-content: center;
   }
   h2 {
     font-size: 20px;

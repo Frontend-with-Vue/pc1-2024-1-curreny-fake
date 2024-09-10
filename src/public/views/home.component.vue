@@ -26,6 +26,7 @@ import CurrencyList from "../../currency/components/currency-list.component.vue"
           'header'
           'main'
           'footer';
+    background-color: #000048;
   }
   .header {
     grid-area: header;

@@ -18,4 +18,10 @@ const title = ref('Fake Zoo API Showcase')
   header{
     grid-area: header;
   }
+  .p-toolbar {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+  }
 </style>
